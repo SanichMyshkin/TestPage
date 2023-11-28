@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header__inner">
+
+                <div class="header__top">
+                    <a class="logo" href="https://mgsu.ru/">
+                        <img class="logo__img" src="images/old-logo.png" width="60" height="100" alt="">
+                    </a>
+                    <div class="header__phone">
+                        <a class="header__phone-number" href="abc.pptx">Презентация
+                        </a>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="index.html">Главная</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="OperationSYS.html">Выбор ОС</a></li>
+                                    <li><a href="FileSYS.html">Выбор ФС</a></li>
+                                    <li><a href="RazdelDisk.html">Деление диска на разделы</a></li>
+                                </ul>
+                            </div>
+                            </li>
+                        <li class="menu__item"><a class="menu__link" href="RabotaSreestrom.html">Средства работы с реестром</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="RegOrganaizer.html">Reg Organizer</a></li>
+                                    <li><a href="RegSeeker.html">Reg Seeker</a></li>
+                                    <li><a href="WinReestr.html">Win Утилита</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="RabotaSdisk.html">Средства работы с сжатыми дисками</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="DrviverSpace.html">Drive Space</a></li>
+                                    <li><a href="Staker.html">Compress Agent</a></li>
+                                    <li><a href="WinDisk.html">Win Утилита</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="RabotaSvirtual.html">Средства создания и работы с виртуальними
+                                машинами</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="virtualbox.html">Virtual box</a></li>
+                                    <li><a href="VMware.html">Vmware</a></li>
+                                    <li><a href="HYPER-v.html">Hyper-V</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="literuture.html">Источники</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h1 class="header__title">
+                    Про Hyper-V
+                </h1>
+                <div class="img_disk">
+                    <img src="images/hyperv.png"alt="">
+                </div>
+                <div class="disk">
+                </h1 class ="DiskHeader">
+                <b>Hyper-V </b>— это технология виртуализации на основе низкоуровневой оболочки. Hyper-V использует Windows гипервизор, для которого требуется физический процессор с конкретными функциями. сведения об оборудовании см. в статье требования к системе для Hyper-V на Windows Server.
+                <br>
+                <div class="MacOs">
+                    <div class="img_disk">
+                        <br><br><br>
+                        <img src="images/inthyperv.png"alt="">
+                    </div>
+                    <h1 class="MacHeader">
+                        <br>
+                        <i>Преимуества Hyper-V</i>
+                    </h1>
+                    <ul class="literature">
+                        <li> Рациональное использование оборудования. Поддержка аппаратной виртуализации Hyper-V дает возможность сосредоточить серверы на меньшем количестве физических машин (как показывает опыт, без виртуализации их ресурсы редко используются на полную мощность). Пример из нашей практики —  перенос сервера на виртуальную машину Hyper-V позволил развернуть на единственном физическом сервере одновременно сервер Active Directory, сервера терминалов и баз данных, соответственно, у заказчика получилось сэкономить средства на покупку «лишнего» оборудования и его эксплуатацию.</li>
+                        <li> Организация частной облачной среды предприятия. Система виртуализации Hyper-V поможет создать общедоступные облачные ресурсы компании и гибко управлять их использованием. Для большей безопасности и защиты виртуальных серверов Hyper-V существует технология экранирования виртуальных машин (Shielded virtual machines).</li>
+                        <li> Безопасность данных компании. В качестве одной из мер безопасности можно рассмотреть использование на клиентских ПК Hyper-V, виртуализацию физической машины. На рабочем месте сотрудника выполняем перенос физической машины в виртуальную среду Hyper-V, разворачиваем две виртуальные машины (ВМ) — рабочую и персональную. На рабочей настраиваем все необходимые ограничения доступа и политики безопасности, принятые в компании, а на персональной пользователь может делать все, что ему угодно, при этом данные компании останутся в полной сохранности, т.к. ВМ изолированы одна от другой. Встроенные средства поддержки виртуализации Hyper-V есть в Windows 7, 10 Pro или Enterprise.</li>
+                        <li> Виртуальные рабочие столы (VDI). Установка и настройка Hyper-V Server 2012 и хоста виртуализации удаленных рабочих столов предоставит пользователям личные виртуальные рабочие столы — готовое рабочее окружение с доступом к нему из любой точки мира, позволит централизовать администрирование и контролировать все пользовательские потоки данных. А средства динамической миграции ВМ дадут возможность выполнять перенос виртуальных машин Hyper-V практически незаметно для пользователей.</li>
+                        <li> Моделирование любых сред для задач разработки и тестирования приложений. Можно использовать виртуализацию при помощи Hyper-V для имитации физических компьютерных сред, в которых должно функционировать приложение. При этом нет надобности покупать и поддерживать все аппаратные комплектующие, которые понадобились бы, если бы среду воссоздавали физически, достаточно установить Windows Hyper-V и смоделировать все необходимые компоненты.</li>
+                        <li> Непрерывность бизнес-процессов. Виртуализация серверов с Windows Server Hyper-V поможет уменьшить влияние простоев, поскольку виртуальный сервер не привязан к физическому оборудованию, которое может отказать. В случае отказа его можно быстро и несложно запустить на дублирующем оборудовании (лучше всего, если выполнена настройка сети Hyper-V Windows и организован отказоустойчивый кластер серверов).</li>
+                        <li> Гипервизор Hyper-V распространяется бесплатно, его можно скачать с сайта Microsoft, устанавливается он на любой Windows или Linux сервер. Им легко управлять и просто использовать.</li>   
+                        <li> Резервное копирование (снепшот) можно сделать моментально, не прерывая рабочего процесса. Откат к состоянию снепшота занимает секунды, создание копии виртуальной машины тоже. При этом подразумеваем, что в качестве накопителя на гипервизоре установлен SSD.</li> 
+                        <li> Среди главных преимуществ переноса задач из физических компьютеров в виртуализованные среды – высокая доступность виртуальной машины в Hyper-V, начиная с 2012 выпуска и заканчивая более современными версиями. Компоненты Hyper-V старых версий могут быть уязвимы к атакам типа Meltdown (доступ к спекулятивному выполнению кода процессором и возможность украсть участки баз данных и пароли) и Spectre (возможность выйти за пределы виртуализованного процесса в гипервизор).</li> 
+                    </ul>
+                <div class="header__content">
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

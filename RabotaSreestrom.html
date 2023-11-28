@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header__inner">
+
+                <div class="header__top">
+                    <a class="logo" href="https://mgsu.ru/">
+                        <img class="logo__img" src="images/old-logo.png" width="60" height="100" alt="">
+                    </a>
+                    <div class="header__phone">
+                        <a class="header__phone-number" href="abc.pptx">Презентация
+                        </a>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="index.html">Главная</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="OperationSYS.html">Выбор ОС</a></li>
+                                    <li><a href="FileSYS.html">Выбор ФС</a></li>
+                                    <li><a href="RazdelDisk.html">Деление диска на разделы</a></li>
+                                </ul>
+                            </div>
+                            </li>
+                        <li class="menu__item"><a class="menu__link" href="RabotaSreestrom.html">Средства работы с реестром</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="RegOrganaizer.html">Reg Organizer</a></li>
+                                    <li><a href="RegSeeker.html">Reg Seeker</a></li>
+                                    <li><a href="WinReestr.html">Win Утилита</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="RabotaSdisk.html">Средства работы с сжатыми дисками</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="DrviverSpace.html">Drive Space</a></li>
+                                    <li><a href="Staker.html">Compress Agent</a></li>
+                                    <li><a href="WinDisk.html">Win Утилита</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="RabotaSvirtual.html">Средства создания и работы с виртуальними
+                                машинами</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="virtualbox.html">Virtual box</a></li>
+                                    <li><a href="VMware.html">Vmware</a></li>
+                                    <li><a href="HYPER-v.html">Hyper-V</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="literuture.html">Источники</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h1 class="header__title">
+                    Работа с реестром
+                </h1>
+                <div class="img_disk">
+                    <img src="images/resstr.png"alt="">
+                </div>
+                <div class="disk">
+                </h1 class ="DiskHeader">
+                <br><br><br> 
+                <b>Реестр</b> – это иерархически построенная база данных параметров и настроек в большинстве операционных систем Microsoft Windows. Реестр содержит информацию и настройки для аппаратного обеспечения, программного обеспечения, профилей пользователей, предустановки
+                <br>
+                <br><br><br> Реестр Windows был введён для упорядочения информации, хранившейся до этого во множестве INI-файлов, обеспечения единого механизма (API) записи -
+                чтения настроек и избавления от проблем коротких имён, отсутствия разграничения 
+                прав доступа и медленного доступа к ini-файлам, хранящимся на файловой системе 
+                FAT16, имевшей серьёзные проблемы быстродействия при поиске файлов в каталогах с 
+                большим их количеством. Со временем (окончательно — с появлением файловой системы NTFS) 
+                проблемы, решавшиеся реестром, исчезли, но реестр остался из-за обратной совместимости и 
+                присутствует во всех версиях Windows, включая последнюю. Поскольку сейчас не существует 
+                реальных предпосылок для использования подобного механизма, Microsoft Windows — единственная 
+                операционная система из используемых сегодня, в которой используется механизм реестра 
+                операционной системы. 
+                <div class="MacOs">
+                    <h1 class="MacHeader">
+                        <br><br>
+                        <i>Ключевые разделы реестра</i>
+                    </h1>
+                    <ul class="literature">
+                        <li> <b>HKEY_CLASSES_ROOT - </b>раздел предназначен для хранение и управления ассоциациями файлов. Так же по своей роли является всего лишь ссылкой на HKEY_LOCAL_MACHINE/Software/Classes</li>
+                        <li> <b>HKEY_CURRENT_USER - </b>Содержит данные и параметры того, кто вошел в систему. Так же тут находятся данные об установленных программ. Этот раздел уже является ссылкой на HKEY_USERS.</li>
+                        <li> <b>HKEY_LOCAL_MACHINE - </b>тут хранятся настройки операционной системы и программ всех пользователей.</li>
+                        <li> <b>HKEY_USERS - </b>по сути являеться хранилищем для всех настроек пользователей.</li>
+                        <li> <b>HKEY_CURRENT_CONFIG - </b>хранит все установленные устройства и оборудование.</li>
+
+                    </ul>
+                    <div class="img_disk">
+                        <br><br>
+                        <h1 class="vivod">Рекомендации</h1>
+                        <br>
+                        <ul>Наиболее надежным является Reg Organizer, поскольку он имеет хороший функционал, бесплатен, в целом имеет больше плюсов чем остальные программы, но самое главное, он в состоянии поправить изменения реестра и в случае чего сможет восстановить его версию до изменения, а значит сможет сохранить ваши данные
+                            </ul>
+                        <br>   
+
+
+
+                <div class="header__content">
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

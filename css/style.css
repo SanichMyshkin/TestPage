@@ -1,0 +1,211 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.header {
+    background-image: url(../images/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-height: 100vh;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 0 49px;
+
+}
+
+.header__phone {
+    font-size: 16px;
+    line-height: 130%;
+    color: aliceblue;
+    font-weight: 400;
+}
+
+.header__phone-number {
+    font-weight: 400;
+    margin-left: 19px;
+    padding: 12px 31px 13px;
+    background-color: #D4AF37;
+    /*Золотой цвет*/
+    border-radius: 22px;
+}
+
+.menu {
+    position: sticky;
+    top: 1.5%;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    padding: 12px 0 10px;
+    background-color: #D4AF37;
+    border-radius: 22px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.header__title_main {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 130%;
+    text-align: center;
+    color: aliceblue;
+}
+
+.header__title {
+    text-align: center;
+    font-size: 50px;
+    line-height: 500%;
+}
+
+.dropdown {
+    display: none;
+    background-color: #D4AF37;
+    border-radius: 3px;
+}
+
+.menu__item:hover .dropdown {
+    display: block;
+    position: absolute;
+}
+
+.menu__item:hover .dropdown ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu__item:hover .dropdown ul li:hover,
+.dropdown ul li:focus,
+.dropdown ul li:active {
+    opacity: .75;
+}
+
+.dropdown ul li a {
+    font-size: 18px;
+    line-height: 24px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+.logo__img{
+    filter: invert(1);
+  }
+
+.literature{
+    margin: 5%;
+}
+
+.literature li{
+    margin: 10px;
+}
+
+.text_os{
+    margin: 0 50px 15px 100px;
+    line-height: 150%;
+    text-align: left;
+}
+.img_os{
+    margin: auto;
+}
+.WindowsOS{
+    margin: 0 50px 15px 100px;
+    line-height: 150%;
+    text-align: left;
+}
+.WinHeader{
+    line-height: 150%;
+    text-align: center;
+}
+
+.MacOS{
+    margin: 0 50px 15px 100px;
+    line-height: 150%;
+    text-align: left;
+}
+.MacHeader{
+    text-align: center;
+    line-height: 150%;
+}
+
+.LinuxOS{
+    margin: 0 50px 15px 100px;
+    line-height: 150%;
+    text-align: left;
+}
+.LinuxHeader{
+    line-height: 150%;
+    text-align: center;
+}
+.ChoseHeader{
+    line-height: 150%;
+    margin: 0 50px 15px 100px;
+    text-align: left;
+}
+.ChoseOS{
+    line-height: 150%;
+    text-align: center;
+}
+
+.img_disk{
+    text-align: center;
+}
+
+.img_disk img{
+    line-height: 150%;
+    height: 350px;
+}
+
+.disk{
+    line-height: 150%;
+    margin: 0 50px 15px 100px;
+    text-align: left;
+}
+
+.vivod{
+    line-height: 150%;
+    text-align: center;
+}
+

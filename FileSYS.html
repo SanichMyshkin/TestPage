@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header__inner">
+
+                <div class="header__top">
+                    <a class="logo" href="https://mgsu.ru/">
+                        <img class="logo__img" src="images/old-logo.png" width="60" height="100" alt="">
+                    </a>
+                    <div class="header__phone">
+                        <a class="header__phone-number" href="abc.pptx">Презентация
+                        </a>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="index.html">Главная</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="OperationSYS.html">Выбор ОС</a></li>
+                                    <li><a href="FileSYS.html">Выбор ФС</a></li>
+                                    <li><a href="RazdelDisk.html">Деление диска на разделы</a></li>
+                                </ul>
+                            </div>
+                            </li>
+                        <li class="menu__item"><a class="menu__link" href="RabotaSreestrom.html">Средства работы с реестром</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="RegOrganaizer.html">Reg Organizer</a></li>
+                                    <li><a href="RegSeeker.html">Reg Seeker</a></li>
+                                    <li><a href="inReestr.html">Win Утилита</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="RabotaSdisk.html">Средства работы с сжатыми дисками</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="DrviverSpace.html">Drive Space</a></li>
+                                    <li><a href="Staker.html">Compress Agent</a></li>
+                                    <li><a href="WinDisk.html">Win Утилита</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="RabotaSvirtual.html">Средства создания и работы с виртуальними
+                                машинами</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="virtualbox.html">Virtual box</a></li>
+                                    <li><a href="VMware.html">Vmware</a></li>
+                                    <li><a href="HYPER-v.html">Hyper-V</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="literuture.html">Источники</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h1 class="header__title">
+                    Выбор файловой системы  
+                </h1>
+                <div class="img_disk">
+                    <img src="images/fileSYS.png"alt="">
+                </div>
+                <div class="disk">
+                </h1 class ="DiskHeader">
+                <br><br><br> 
+                <b>Файл</b> - именованная область данных на носителе информации, используемая как базовый объект взаимодействия с данными в операционных системах. 
+                <br><br><br>
+                <b>Файловая система</b> - порядок, определяющий способ организации, хранения и именования данных на носителях информации в компьютерах, а также в другом электронном оборудовании: цифровых фотоаппаратах, мобильных телефонах и т. п.
+                <br><br><br>
+                <div class="MacOs">
+                    <h1 class="MacHeader">
+                        <br><br>
+                        <i>NTFS</i>
+                    </h1>
+                    <br><br><br> 
+                    <b>NTFS</b> - лучше всего использовать в томах объемом около 400 МБ или более. Это происходит потому, что производительность в NTFS не снижается, как в FAT, при больших размерах томов. работа на дисках большого объема происходит эффективно. Не рекомендуется использовать NTFS для тома размером менее 400 МБ из-за объема пространства, используемого в NTFS. Это пространство используется в виде системных файлов NTFS, которые обычно используют не менее 4 МБ дискового пространства в секции 100 МБ.
+                    NTFS не совместима с большинством других операционных систем, так как она была разработана под требования ОС Windows. С ней отлично работают все версии операционной системы от Microsoft начиная с XP и заканчивая последней на сегодняшний день Windows 11, но вот другие ОС имеют значительные ограничения при работе с ней.
+                </div>
+                <div class="MacOs">
+                    <h1 class="MacHeader">
+                        <br><br>
+                        <i>exFAT</i>
+                    </h1>
+                    <br><br><br> 
+                    <b>exFAT</b> - проприетарная файловая система, предназначенная главным образом для флэш-накопителей. 
+                    Впервые представлена фирмой Microsoft для встроенных устройств в Windows Embedded CE 6.0. 
+                    Размер кластера по умолчанию для файловой системы exFAT составляет от 4 КБ до 128 КБ в зависимости 
+                    от размера тома, максимальный допустимый по спецификации — 32 МБ.  
+                </div>
+                <div class="MacOs">
+                    <h1 class="MacHeader">
+                        <br><br>
+                        <i>FAT32</i>
+                    </h1>
+                    <br><br><br> 
+                    <b>FAT32</b> - устройства с файловой системой FAT32 являются наиболее универсальными и
+                     совместимы со всеми версиями операционных систем Windows, Mac OS, Linux, любыми игровыми 
+                     консолями и в общем практически всем, что имеет USB порт.<br><br><br>
+                </div>
+
+                <div class="img_disk">
+                    <img src="images/sravneniefilesys.jpeg"alt="">
+                    <br><br>
+                    <h1 class="vivod">Рекомендации</h1>
+                    <br>
+                    <ul>Преимуществом файловой системы NTFS является размер файлов. Но NTFS также может предложить
+                        больше в плане безопасности данных. Пользователям и группам пользователей могут быть даны разрешения 
+                        на чтение, запись или выполнение дисков, папок или файлов.
+                        </ul>
+                    <br>
+                </div>
+
+
+
+
+                <div class="header__content">
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
